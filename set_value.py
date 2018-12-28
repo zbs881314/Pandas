@@ -13,3 +13,9 @@ df.A[df.A>0] = 0
 df['F'] = np.nan
 df['G'] = pd.Series([1, 2, 3, 4, 5, 6], index=pd.date_range('20130101', periods=6))
 print(df)
+
+df.iloc[0, 1] = np.nan
+df.iloc[1, 2] = np.nan
+print(df.dropna(axis=0, how='any'))
+print(df.fillna(value=0))
+print(pd.isnull(df))
