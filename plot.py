@@ -19,3 +19,11 @@ ax = data.plot.scatter(x='A', y='B', color='DarkBlue', label="Class 1")
 data.plot.scatter(x='A', y='C', color='LightGreen', label='Class 2', ax=ax)
 
 plt.show()
+
+
+# read from
+data = pd.read_csv('student.csv')
+print(data)
+
+# save to
+data.to_pickle('student.pickle')
