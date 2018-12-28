@@ -19,3 +19,4 @@ df.iloc[1, 2] = np.nan
 print(df.dropna(axis=0, how='any'))
 print(df.fillna(value=0))
 print(pd.isnull(df))
+# print(np.any(df.isnull()) == True)
